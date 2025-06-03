@@ -1,0 +1,6 @@
+pandas
+Unidecode
+selenium
+missingno
+plotly
+streamlit
