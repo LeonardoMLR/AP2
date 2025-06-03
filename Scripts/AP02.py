@@ -20,10 +20,12 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import missingno as msno
+import csv, os
 
 ##BASE ###########################################
 ##################################################
-df = pd.read_csv('../basestratadas/filmes.csv', sep=';')
+csv_file_path = os.path.join(current_dir, '..', 'basestratadas', 'filmes.csv')
+df = pd.read_csv(csv_file_path, sep=';')
 
 
 ## TAMANHO DA TELA ###############################
