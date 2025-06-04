@@ -20,10 +20,13 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import missingno as msno
-import csv, os
+import csv 
+import os
 
 ##BASE ###########################################
 ##################################################
+current_dir = os.path.dirname(__file__)
+
 csv_file_path = os.path.join(current_dir, '..', 'basestratadas', 'filmes.csv')
 df = pd.read_csv(csv_file_path, sep=';')
 
